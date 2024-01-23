@@ -188,21 +188,31 @@ body {
     }
 
     .secundario {
-        text-align: center;
+        text-align: center; 
     }
 
     .container.secundario {
         margin-bottom: 6em;
+        margin: auto;
     }
 
     .secundario__imagem {
-        width: 50vw;
-        margin: 3em 0em;
+        width: 50vw;    
         margin-left: 0;
     }
 
     .descricao__texto {
         margin: 1em 3em;
+    }
+
+    .conteudo__descricao {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .descricao__texto {
+        margin-left: 5em;
+        margin-right: 5em;
     }
 
     .dispositivos__lista {
