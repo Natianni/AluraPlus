@@ -202,17 +202,7 @@ body {
     }
 
     .descricao__texto {
-        margin: 1em 3em;
-    }
-
-    .conteudo__descricao {
-        margin-left: 5em;
-        margin-right: 5em;
-    }
-
-    .descricao__texto {
-        margin-left: 5em;
-        margin-right: 5em;
+        margin: 1em 0em;
     }
 
     .dispositivos__lista {
