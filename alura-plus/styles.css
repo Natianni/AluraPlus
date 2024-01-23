@@ -168,3 +168,56 @@ body {
     margin: 1.5em 0em;
     line-height: 150%;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        background-image: none;
+        display: block;
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .conteudo {
+        flex-direction: column-reverse;
+    }
+
+    .conteudo__descricao {
+        padding: 0em 1em;
+    }
+
+    .secundario {
+        text-align: center;
+    }
+
+    .container.secundario {
+        margin-bottom: 6em;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+        margin: 3em 0em;
+        margin-left: 0;
+    }
+
+    .descricao__texto {
+        margin: 1em 3em;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+    }
+
+    .rodape {
+        margin: 2rem;
+    }
+
+    .lista__link__botao {
+        font-size: 0.8rem;
+    }
+
+    .rodape__texto {
+        font-size: 0.6rem;
+    }
+}
