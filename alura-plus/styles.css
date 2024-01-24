@@ -9,6 +9,8 @@
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
+    --botao-azul-hover: #075DC5;
+    --botao-transparente-secundario-hover: #D6D6D6;
     --cor-de-fundo: #00030c;
     --fonte-principal:  'Inter', sans-serif;
 }
@@ -58,9 +60,27 @@ body {
     margin-bottom: 1em;
 }
 
+.container__botao:hover {
+    color: var(--branco-principal);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: var(--botao-azul-hover);
+    display: block;
+    margin-bottom: 1em;
+}
+
 .botao__secundario {
     background-color: transparent;
     border: 1px solid var(--branco-principal);
+}
+
+.botao__secundario:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.botao__terciario:hover {
+    display: inline-block;
 }
 
 .container__aviso {
@@ -151,6 +171,7 @@ body {
     color: var(--branco-principal);
     text-decoration: none;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 .lista__link__botao {
@@ -170,17 +191,28 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
     .container {
         background-image: none;
         display: block;
+        justify-content: center;
     }
 
     .container__caixa {
         margin: 2em 2em;
     }
 
+    .container__imagem {
+        width: 100%;
+        height: auto;
+    }
+
     .conteudo {
         flex-direction: column-reverse;
+    }
+
+    .conteudo__titulo {
+        font-size: 2rem;
     }
 
     .conteudo__descricao {
@@ -195,19 +227,33 @@ body {
     .container.secundario {
         margin-bottom: 6em;
         margin: auto;
+        overflow: hidden;
     }
 
     .secundario__imagem {
-        width: 50vw;    
+        width: 40vw;    
         margin-left: 0;
     }
 
     .descricao__texto {
-        margin: 1em 0em;
+        margin: 1em 1em;
+    }
+
+    .dispositivos {
+        overflow: hidden;
+    }
+
+    .dispositivos__titulo {
+        font-size: 2rem;
     }
 
     .dispositivos__lista {
         flex-direction: column;
+        overflow: hidden;
+    }
+
+    .dispositivos__nomes {
+        font-size: 1.7rem;
     }
 
     .rodape {
